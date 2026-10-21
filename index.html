@@ -93,6 +93,12 @@
   .pakket .per-maand { color: var(--zacht); font-size: 15px; }
   .pakket .omschrijving { color: var(--zacht); font-size: 15px; margin: 18px 0 28px; min-height: 44px; }
   .pakket .knop { margin-top: auto; }
+  .los { background: var(--wit); border-radius: 28px; padding: 32px 40px; margin-top: 20px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .los .aantal { font-size: 24px; font-weight: 600; letter-spacing: -.02em; }
+  .los .omschrijving { color: var(--zacht); font-size: 15px; margin-top: 4px; }
+  .los .rechts { display: flex; align-items: center; gap: 28px; }
+  .los .bedrag { font-size: 32px; font-weight: 700; letter-spacing: -.03em; white-space: nowrap; }
+  .los .bedrag span { color: var(--zacht); font-size: 15px; font-weight: 400; letter-spacing: 0; }
   .voetnoot { text-align: center; color: var(--zacht); font-size: 13px; margin-top: 28px; }
 
   /* vragen */
@@ -117,6 +123,8 @@
     .held { padding: 80px 0 90px; }
     .stappen, .tegels, .prijzen { grid-template-columns: 1fr; }
     .tegel { min-height: 0; padding: 40px 30px; }
+    .los, .los .rechts { flex-direction: column; text-align: center; }
+    .los .rechts { gap: 18px; }
   }
 </style>
 </head>
@@ -183,7 +191,7 @@
     <div class="wrap">
       <div class="kop">
         <h2>Prijzen.</h2>
-        <p class="onder">Per maand, voor je eigen account. Begin met 3 gratis shorts.</p>
+        <p class="onder">Een vast pakket per maand, of losse shorts. Begin met 3 gratis shorts.</p>
       </div>
       <div class="prijzen">
         <div class="pakket">
@@ -208,6 +216,16 @@
           <div class="bedrag">€499</div>
           <div class="per-maand">per maand</div>
           <p class="omschrijving">Voor meerdere platforms tegelijk.</p>
+          <a class="knop" href="https://ig.me/m/getplugkit" target="_blank" rel="noopener">Stuur een DM</a>
+        </div>
+      </div>
+      <div class="los">
+        <div>
+          <div class="aantal">Losse shorts</div>
+          <p class="omschrijving">Geen abonnement. Je betaalt alleen voor de shorts die je wilt.</p>
+        </div>
+        <div class="rechts">
+          <div class="bedrag">€9,99 <span>per short</span></div>
           <a class="knop" href="https://ig.me/m/getplugkit" target="_blank" rel="noopener">Stuur een DM</a>
         </div>
       </div>
